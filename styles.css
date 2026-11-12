@@ -1,12 +1,12 @@
 :root {
-  --ink: #1c2430;
-  --paper: #f3f1ec;
-  --muted: #5c6672;
-  --line: rgba(28, 36, 48, 0.12);
-  --accent: #1e4d78;
-  --brass: #8d6a32;
-  --card: #fffcf8;
-  --shadow: 0 18px 40px rgba(28, 36, 48, 0.06);
+  --ink: #17302a;
+  --paper: #f4f1ea;
+  --muted: #5d6d66;
+  --line: rgba(23, 48, 42, 0.12);
+  --accent: #1b6b56;
+  --brass: #1b6b56;
+  --card: #fffcf7;
+  --shadow: 0 16px 36px rgba(23, 48, 42, 0.07);
 }
 
 * { box-sizing: border-box; }
@@ -15,7 +15,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(180deg, #e7eef4 0%, transparent 280px),
+    linear-gradient(180deg, #e3f0ea 0%, transparent 320px),
     var(--paper);
   font-family: Manrope, "Segoe UI", sans-serif;
   font-weight: 500;
@@ -31,7 +31,7 @@ body {
   align-items: center;
   padding: 16px 7vw;
   backdrop-filter: blur(16px);
-  background: rgba(243, 241, 236, 0.88);
+  background: rgba(244, 241, 234, 0.9);
   border-bottom: 1px solid var(--line);
 }
 .nav a { color: var(--ink); text-decoration: none; }
@@ -79,9 +79,9 @@ h1 {
   margin: 12px 0 14px;
   letter-spacing: -0.03em;
 }
-.role { font-size: 1.15rem; margin: 0 0 14px; color: #2a3340; }
+.role { font-size: 1.15rem; margin: 0 0 14px; color: #243832; }
 .role span { color: var(--brass); }
-.lede { max-width: 640px; font-size: 1.08rem; color: #2c3542; font-weight: 500; }
+.lede { max-width: 640px; font-size: 1.08rem; color: #243832; font-weight: 500; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0; }
 .btn {
   text-decoration: none;
@@ -147,7 +147,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
 .job time { color: var(--brass); font-size: 0.9rem; white-space: nowrap; font-weight: 600; }
 .quiet { color: var(--muted); }
 
-.slider { overflow: hidden; }
+.slider { overflow: hidden; background: linear-gradient(180deg, #f7fffb 0%, var(--card) 42%); }
 .viewport { overflow: hidden; width: 100%; }
 .track { display: flex; transition: transform 0.55s cubic-bezier(0.22, 0.7, 0.2, 1); }
 .slide {
@@ -160,7 +160,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
   padding: 32px 36px 24px;
   align-items: end;
 }
-.slide p { margin: 0; max-width: 52ch; color: #2c3542; }
+.slide p { margin: 0; max-width: 52ch; color: #243832; }
 .slide-note {
   justify-self: end;
   text-align: right;
@@ -215,7 +215,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
   border: 0;
   padding: 0;
   border-radius: 99px;
-  background: #d5d0c8;
+  background: #d5e2db;
   cursor: pointer;
 }
 .dots button[aria-current="true"] { background: var(--accent); }
@@ -226,7 +226,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
   gap: 12px;
 }
 .card { margin: 0; padding: 20px 20px 22px; }
-.card p { margin: 0; color: #2c3542; }
+.card p { margin: 0; color: #243832; }
 .card h3 { font-size: 1.2rem; }
 .wait { opacity: 0; transform: translateY(12px); }
 .wait.in { animation: rise 0.65s ease forwards; }
