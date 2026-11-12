@@ -64,7 +64,22 @@ body {
 
 main { width: min(1080px, 88vw); margin: 0 auto; padding-bottom: 72px; }
 
-.hero { padding: 64px 0 28px; }
+.hero {
+  padding: 48px 0 28px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.portrait {
+  width: 240px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
 .eyebrow {
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -258,7 +273,8 @@ footer {
   .split, .job header, .slide { display: block; }
   .slide-note { text-align: left; margin-top: 16px; }
   .job time { display: block; margin-top: 6px; }
-  .hero { padding-top: 32px; }
+  .hero { padding-top: 28px; display: block; }
+  .portrait { width: min(240px, 70vw); height: 260px; margin-bottom: 18px; }
   .slide { padding: 24px 20px 8px; }
 }
 
