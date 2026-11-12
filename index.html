@@ -7,13 +7,10 @@
   <meta name="description" content="Lalit Chaudhary, Technical Team Lead and Senior Flutter Developer in Ahmedabad. 7+ years building mobile, web, and desktop software." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,680&family=Outfit:wght@360;480;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="orb orb-a" aria-hidden="true"></div>
-  <div class="orb orb-b" aria-hidden="true"></div>
-
   <header class="nav">
     <a class="mark" href="#top">LC</a>
     <nav>
@@ -86,33 +83,59 @@
     </section>
 
     <section id="projects" class="panel">
-      <h2>Selected work</h2>
-      <p class="quiet">Four products are live on Google Play. Desktop and web systems sit beside them.</p>
+      <div class="section-head">
+        <h2>Published apps</h2>
+        <p class="quiet">Live on Google Play. Use the arrows or wait — the slider pauses while you hover it.</p>
+      </div>
+      <div class="slider" data-slider>
+        <div class="viewport">
+          <div class="track">
+            <article class="slide">
+              <div>
+                <p class="tag">01 · Flutter · Dairy</p>
+                <h3>SUJAN Collection</h3>
+                <p>Milk collection for members: shifts, ledger, rates, and collection records. The desktop companion covers PLC, USB, and thermal receipts.</p>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.sujandairy.tech&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
+              </div>
+              <p class="slide-note">Package<br />com.sujandairy.tech</p>
+            </article>
+            <article class="slide">
+              <div>
+                <p class="tag">02 · Flutter · Operations</p>
+                <h3>KDS</h3>
+                <p>Dairy operations for sales, dispatch, suppliers, products, payments, and reports. Desktop tools connect analyzers, scales, and printers.</p>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.milk.kds&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
+              </div>
+              <p class="slide-note">Package<br />com.milk.kds</p>
+            </article>
+            <article class="slide">
+              <div>
+                <p class="tag">03 · Flutter · Farmers</p>
+                <h3>KFA Farmer</h3>
+                <p>Farmer profiles, milk collection records, payment history, a farmer ledger, and a dashboard tied to the dairy backend.</p>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.milk.farmers&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
+              </div>
+              <p class="slide-note">Package<br />com.milk.farmers</p>
+            </article>
+            <article class="slide">
+              <div>
+                <p class="tag">04 · Flutter · GPS</p>
+                <h3>True Track</h3>
+                <p>Live GPS tracking with location services, route history, API sync, and the screens people use in the field.</p>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.truetrack&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
+              </div>
+              <p class="slide-note">Package<br />com.truetrack</p>
+            </article>
+          </div>
+        </div>
+        <div class="slider-bar">
+          <button type="button" class="slider-btn" data-prev aria-label="Previous app">Prev</button>
+          <div class="dots" data-dots></div>
+          <button type="button" class="slider-btn" data-next aria-label="Next app">Next</button>
+        </div>
+      </div>
+      <h2 class="subhead">More delivery</h2>
       <div class="grid">
-        <article class="card store">
-          <p class="tag">Google Play · Flutter</p>
-          <h3>SUJAN Collection</h3>
-          <p>Milk collection for members: shifts, ledger, rates, and collection records. Desktop side covers PLC, USB, and thermal receipts.</p>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.sujandairy.tech&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
-        </article>
-        <article class="card store">
-          <p class="tag">Google Play · Flutter</p>
-          <h3>KDS</h3>
-          <p>Dairy operations app for sales, dispatch, suppliers, products, payments, and reports. Desktop tools connect analyzers, scales, and printers.</p>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.milk.kds&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
-        </article>
-        <article class="card store">
-          <p class="tag">Google Play · Flutter</p>
-          <h3>KFA Farmer</h3>
-          <p>Farmer profiles, milk collection records, payment history, farmer ledger, and a dashboard tied to the dairy backend.</p>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.milk.farmers&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
-        </article>
-        <article class="card store">
-          <p class="tag">Google Play · GPS</p>
-          <h3>True Track</h3>
-          <p>Live GPS tracking: location services, route history, API sync, and the screens people use in the field.</p>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.truetrack&amp;hl=en_IN" target="_blank" rel="noopener">View on Google Play</a>
-        </article>
         <article class="card">
           <p class="tag">Flutter Web · Laravel · MySQL</p>
           <h3>Sports Club Member System</h3>
