@@ -15,6 +15,7 @@ document.querySelectorAll(".job, .edu, .contact, .card").forEach((node) => {
 const root = document.querySelector("[data-slider]");
 if (root) {
   const track = root.querySelector(".track");
+  const viewport = root.querySelector(".viewport");
   const slides = [...track.children];
   const dotsWrap = root.querySelector("[data-dots]");
   let index = 0;
@@ -30,7 +31,7 @@ if (root) {
 
   function go(next) {
     index = (next + slides.length) % slides.length;
-    track.style.transform = "translateX(" + -index * 100 + "%)";
+    track.style.transform = "translateX(" + -index * viewport.clientWidth + "px)";
     [...dotsWrap.children].forEach((dot, i) => {
       if (i === index) dot.setAttribute("aria-current", "true");
       else dot.removeAttribute("aria-current");
@@ -58,6 +59,7 @@ if (root) {
   root.addEventListener("focusin", stop);
   root.addEventListener("focusout", play);
 
+  window.addEventListener("resize", () => go(index));
   go(0);
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) play();
 }
