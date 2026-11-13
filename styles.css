@@ -27,15 +27,17 @@ body {
   top: 0;
   z-index: 5;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 7vw;
+  gap: 10px 16px;
+  padding: 14px 20px;
   backdrop-filter: blur(16px);
   background: rgba(244, 241, 234, 0.9);
   border-bottom: 1px solid var(--line);
 }
 .nav a { color: var(--ink); text-decoration: none; }
-.nav nav { display: flex; gap: 22px; font-size: 0.92rem; letter-spacing: 0.02em; }
+.nav nav { display: flex; flex-wrap: wrap; gap: 16px 20px; font-size: 0.92rem; letter-spacing: 0.02em; }
 .nav nav a { position: relative; }
 .nav nav a::after {
   content: "";
@@ -62,7 +64,7 @@ body {
   font-weight: 650;
 }
 
-main { width: min(1080px, 88vw); margin: 0 auto; padding-bottom: 72px; }
+main { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 72px; }
 
 .hero {
   padding: 48px 0 28px;
@@ -89,7 +91,7 @@ main { width: min(1080px, 88vw); margin: 0 auto; padding-bottom: 72px; }
 }
 h1, h2, h3 { font-family: Newsreader, Georgia, serif; font-weight: 650; }
 h1 {
-  font-size: clamp(3rem, 7vw, 5.4rem);
+  font-size: clamp(2.15rem, 8vw, 5.4rem);
   line-height: 0.96;
   margin: 12px 0 14px;
   letter-spacing: -0.03em;
@@ -247,7 +249,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
   cursor: pointer;
 }
 .slider-btn:hover { border-color: var(--accent); color: var(--accent); }
-.dots { display: flex; gap: 8px; }
+.dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 .dots button {
   width: 28px;
   height: 4px;
@@ -292,14 +294,37 @@ footer {
   font-size: 0.88rem;
 }
 
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 200px 1fr; gap: 28px; }
+  .portrait { width: 200px; height: 240px; }
+  .slide { grid-template-columns: 1fr; padding: 28px 24px 12px; }
+  .slide-note { justify-self: start; text-align: left; margin-top: 18px; }
+  h2 { font-size: 1.8rem; }
+}
+
 @media (max-width: 760px) {
-  .nav nav { gap: 12px; font-size: 0.82rem; }
+  main { width: min(1080px, calc(100% - 28px)); }
+  .nav { padding: 12px 14px; }
+  .nav nav { gap: 10px 14px; font-size: 0.84rem; }
   .split, .job header, .slide { display: block; }
-  .slide-note { text-align: left; margin-top: 16px; }
   .job time { display: block; margin-top: 6px; }
-  .hero { padding-top: 28px; display: block; }
-  .portrait { width: min(240px, 70vw); height: 260px; margin-bottom: 18px; }
-  .slide { padding: 24px 20px 8px; }
+  .hero { padding-top: 24px; display: block; }
+  .portrait { width: min(220px, 62vw); height: 250px; margin-bottom: 16px; }
+  .role, .lede { font-size: 1rem; }
+  .stats { flex-wrap: wrap; gap: 18px 28px; }
+  .slide { padding: 22px 16px 8px; }
+  .slider-bar { flex-wrap: wrap; }
+  .slider-btn { min-height: 40px; }
+  .dots { order: 3; width: 100%; }
+  .dots button { width: 16px; }
+  .grid { grid-template-columns: 1fr; }
+  .card .store-link + .store-link { margin-left: 0; margin-top: 10px; }
+  .contact-line { align-items: flex-start; }
+}
+
+@media (max-width: 420px) {
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .stats strong { font-size: 1.55rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
