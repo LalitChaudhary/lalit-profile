@@ -6,32 +6,31 @@
   <style>
     @page { size: A4; margin: 12mm 13mm; }
     * { box-sizing: border-box; }
-    body { margin: 0; color: #17302a; font: 10.5pt/1.4 Calibri, "Segoe UI", sans-serif; }
-    header { display: flex; gap: 14px; align-items: center; border-bottom: 2px solid #1b6b56; padding-bottom: 10px; }
-    img { width: 78px; height: 90px; object-fit: cover; object-position: center 18%; border-radius: 4px; }
-    h1 { font-size: 22pt; line-height: 1; margin: 0 0 3px; letter-spacing: -0.02em; }
-    .role { margin: 0; font-weight: 700; color: #1b6b56; }
-    .contact { margin: 4px 0 0; color: #3d524a; }
-    h2 { font-size: 12pt; margin: 13px 0 4px; letter-spacing: 0.04em; text-transform: uppercase; color: #1b6b56; border-bottom: 1px solid #d5e2db; }
-    h3 { font-size: 11pt; margin: 7px 0 0; }
+    body { margin: 0; color: #17302a; font: 10.5pt/1.38 Calibri, "Segoe UI", sans-serif; }
     p, li { margin: 0; }
-    .meta { float: right; color: #1b6b56; font-weight: 700; }
+    header { border-bottom: 2.5px solid #1b6b56; padding-bottom: 8px; }
+    h1 { font-size: 22pt; line-height: 1; margin: 0 0 2px; }
+    .role { margin: 0 0 4px; font-weight: 700; color: #1b6b56; font-size: 11pt; }
+    .contact { margin: 0; color: #3d524a; font-size: 9.5pt; }
+    h2 { font-size: 11pt; margin: 12px 0 5px; letter-spacing: 0.08em; text-transform: uppercase; color: #1b6b56; border-bottom: 1px solid #cfe0d8; padding-bottom: 2px; }
+    h3 { font-size: 10.5pt; margin: 0; }
+    .when { color: #1b6b56; font-weight: 700; font-size: 9.5pt; white-space: nowrap; }
+    .job-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .org { color: #3d524a; font-size: 10pt; }
     ul { margin: 2px 0 0; padding-left: 16px; }
-    .job { margin-top: 6px; }
-    .cols { column-count: 2; column-gap: 18px; }
-    .item { break-inside: avoid; margin: 0 0 6px; }
-    .tag { color: #5d6d66; }
+    li { margin: 0 0 1px; }
+    .job { margin-top: 7px; break-inside: avoid; }
+    .cols { column-count: 2; column-gap: 16px; }
+    .item { break-inside: avoid; margin: 0 0 5px; }
+    .pkg { color: #5d6d66; }
   </style>
 </head>
 <body>
   <header>
-    <img src="lalit.jpg" alt="" />
-    <div>
-      <h1>Lalit Chaudhary</h1>
-      <p class="role">Technical Team Lead · Senior Flutter Developer</p>
-      <p class="contact">Ahmedabad, Gujarat · +91 87329 33958 · chaudharylalit601@gmail.com</p>
-      <p class="contact">github.com/LalitChaudhary · linkedin.com/in/lalit-chaudhary-b3b082170 · lalitchaudhary.github.io/lalit-profile</p>
-    </div>
+    <h1>Lalit Chaudhary</h1>
+    <p class="role">Technical Team Lead · Senior Flutter Developer</p>
+    <p class="contact">Ahmedabad, Gujarat · +91 87329 33958 · chaudharylalit601@gmail.com</p>
+    <p class="contact">github.com/LalitChaudhary · linkedin.com/in/lalit-chaudhary-b3b082170 · lalitchaudhary.github.io/lalit-profile</p>
   </header>
 
   <h2>Profile</h2>
@@ -39,8 +38,8 @@
 
   <h2>Experience</h2>
   <div class="job">
-    <span class="meta">Jun 2023 — Present</span>
-    <h3>Senior Flutter Developer · Karmaa Source Private Limited</h3>
+    <div class="job-head"><h3>Senior Flutter Developer</h3><span class="when">Jun 2023 — Present</span></div>
+    <p class="org">Karmaa Source Private Limited · Technical leadership</p>
     <ul>
       <li>Coordinate delivery, milestones, and production support across mobile, web, and desktop.</li>
       <li>Turn client workflows into scope, architecture, database design, and API contracts.</li>
@@ -49,16 +48,16 @@
     </ul>
   </div>
   <div class="job">
-    <span class="meta">Jun 2019 — May 2023</span>
-    <h3>Android &amp; Flutter Developer · Addon Solutions Pvt. Ltd.</h3>
+    <div class="job-head"><h3>Android &amp; Flutter Developer</h3><span class="when">Jun 2019 — May 2023</span></div>
+    <p class="org">Addon Solutions Pvt. Ltd.</p>
     <ul>
       <li>Built Android and cross-platform apps in Flutter and Dart: UI, business logic, REST, and databases.</li>
       <li>Improved responsiveness and performance, then supported testing, releases, and maintenance.</li>
     </ul>
   </div>
   <div class="job">
-    <span class="meta">Dec 2018 — May 2019</span>
-    <h3>Software Development Intern · Addon Solutions Pvt. Ltd.</h3>
+    <div class="job-head"><h3>Software Development Intern</h3><span class="when">Dec 2018 — May 2019</span></div>
+    <p class="org">Addon Solutions Pvt. Ltd.</p>
     <p>Hands-on mobile development, debugging, and delivery workflows alongside the MCA.</p>
   </div>
 
