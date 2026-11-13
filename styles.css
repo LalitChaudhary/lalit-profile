@@ -166,7 +166,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
 .job time { color: var(--brass); font-size: 0.9rem; white-space: nowrap; font-weight: 600; }
 .quiet { color: var(--muted); }
 
-.slider { overflow: hidden; background: linear-gradient(180deg, #f7fffb 0%, var(--card) 42%); }
+.slider { overflow: hidden; background: linear-gradient(180deg, #f7fffb 0%, var(--card) 42%); margin-bottom: 36px; }
 .viewport { overflow: hidden; width: 100%; }
 .track { display: flex; transition: transform 0.55s cubic-bezier(0.22, 0.7, 0.2, 1); }
 .slide {
