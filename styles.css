@@ -313,12 +313,28 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
 }
 .objective { margin-top: 16px; }
 .contact a { color: var(--accent); font-weight: 700; }
-footer {
+.site-footer {
+  margin-top: 28px;
+  padding: 36px 20px 32px;
   text-align: center;
-  color: var(--muted);
-  padding: 8px 16px 40px;
-  font-size: 0.88rem;
+  color: #e7f2ec;
+  background: #17302a;
 }
+.site-footer p { margin: 0; }
+.footer-name {
+  font-family: Newsreader, Georgia, serif;
+  font-size: 1.45rem;
+  color: #fff;
+}
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 18px;
+  margin-top: 16px;
+}
+.site-footer a { color: #fff; font-weight: 700; text-decoration: none; }
+.site-footer a:hover { color: #b7e0d2; }
 
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 200px 1fr; gap: 28px; }
