@@ -220,7 +220,7 @@ h2 { font-size: 2.1rem; margin: 0 0 16px; }
 }
 .store-link { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 3.5v17l14-8.5z'/%3E%3C/svg%3E"); }
 .store-link.web { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='1.8' d='M10 14a5 5 0 0 0 7.1.2l2.4-2.4a5 5 0 0 0-7.1-7.1L11 6M14 10a5 5 0 0 0-7.1-.2L4.5 12.2a5 5 0 0 0 7.1 7.1L13 18'/%3E%3C/svg%3E"); }
-.store-link:hover { background: var(--ink); }
+.card .store-link + .store-link { margin-left: 8px; }
 .contact-line {
   display: flex;
   align-items: center;
